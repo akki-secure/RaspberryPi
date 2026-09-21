@@ -6,6 +6,10 @@ __pycache__/
 venv/
 .DS_Store
 
+# CircuitPythonファームウェア書き込み用ファイル(ダウンロードフォルダ等で管理し、
+# リポジトリには含めない)
+*.uf2
+
 # キーロガーデモが生成するログ(実験で記録した入力内容を誤ってコミットしないため)
 tools/*.log
 tools/keylogger_demo_*.log
