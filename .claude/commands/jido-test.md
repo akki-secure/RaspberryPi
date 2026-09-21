@@ -5,7 +5,7 @@ description: PC側の自動テスト(pytest)と静的解析(ruff)をまとめて
 以下をこの順番で実行し、結果を日本語で要約して報告してください。
 
 1. `.venv`が無ければ `python3 -m venv .venv && .venv/bin/pip install -r requirements-dev.txt` を実行する
-2. `.venv/bin/ruff check src tests` を実行する（`src/lib`は外部OSSライブラリのため対象外）
+2. `.venv/bin/ruff check src tests` を実行する（`lib`は外部OSSライブラリのため対象外）
 3. `.venv/bin/pytest tests/ -v` を実行する
 
 注意:

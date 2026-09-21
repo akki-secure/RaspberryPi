@@ -1,13 +1,11 @@
 ---
-description: 構造化ログ(運用ログ・警告ログ・監視ログ)の出力フォーマットとイベント一覧を表示する
+description: Pico側(CircuitPythonコンソール)とPC側キーロガーデモのログ出力を確認する
 ---
 
-`docs/requirements.md`の「7. 構造化ログ設計」セクションを読み、以下を日本語で説明してください。
+`docs/requirements.md`の「8. ログ設計」セクションを読み、以下を日本語で説明してください。
 
-- ログの出力先(USBシリアル)とフォーマット(JSON Lines)
-- 運用ログ(INFO)として出るイベント一覧: startup, ready, tag_detected, access_granted, unlocked, locked
-- 警告ログ(WARNING)として出るイベント: access_denied
-- 監視ログ(ERROR)として出るイベント一覧: rfid_init_error, servo_init_error, unexpected_error
-- 実際の出力例を1つ示す
+- Pico側(`src/pico_ducky/code.py`): USBシリアルコンソールへの起動時・タイプ完了時・エラー時のprint出力
+- PC側キーロガーデモ(`tools/keylogger_demo.py`): 記録先ファイル名の形式(`keylogger_demo_<日時>.log`)、記録内容(押下時刻+キー文字)、コンソールに出る開始・停止メッセージ
+- キーロガーデモのログファイルは確認後に必ず削除する運用であること
 
-ユーザーがThonnyのシェルに出たログ内容を貼り付けてきた場合は、そのログがどのイベントに該当し、正常か異常かを判定して説明すること。
+ユーザーがThonnyのシリアル出力やキーロガーデモのログ内容を貼り付けてきた場合は、それがどの段階の出力に該当し、正常か異常かを判定して説明すること。ログファイルの中身(実際のキー入力内容)をチャットに引用・転記しないよう注意すること。

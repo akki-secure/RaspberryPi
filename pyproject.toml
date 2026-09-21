@@ -1,6 +1,6 @@
 [tool.ruff]
 line-length = 100
-extend-exclude = ["src/lib", ".venv"]
+extend-exclude = ["lib", ".venv"]
 
 [tool.ruff.lint]
 select = ["E", "F", "W"]
