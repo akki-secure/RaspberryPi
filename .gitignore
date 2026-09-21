@@ -5,3 +5,8 @@ __pycache__/
 .venv/
 venv/
 .DS_Store
+
+# キーロガーデモが生成するログ(実験で記録した入力内容を誤ってコミットしないため)
+tools/*.log
+tools/keylogger_demo_*.log
+captured_*.txt
