@@ -1,4 +1,4 @@
-# Pico Ducky実験（Raspberry Pi Pico WH / CircuitPython）
+# Pico Ducky検証（Raspberry Pi Pico WH / CircuitPython）
 
 Raspberry Pi Pico WHをUSB HIDキーボードとして振る舞わせる、いわゆる「Pico Ducky」
 （BadUSB）の仕組みを実際に体験し、**攻撃者がUSB経由でキー入力を注入できてしまう原理と、
