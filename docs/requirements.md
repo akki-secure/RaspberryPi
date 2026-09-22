@@ -92,6 +92,8 @@ CircuitPythonのUSBシリアルコンソール(Thonny等で確認可能)に、�
    `CIRCUITPY/lib/`へExplorerでコピーする
 3. Windows機でThonnyを起動し、新規ファイルのエディタにカーソルを置く
 4. Pico WHをUSB接続し、5秒待機後にThonnyのエディタへ固定文字列が自動入力されることを確認する
+   → 2026-09-22 確認済み(Windows機・Thonnyにて`Hello from Pico Ducky (educational demo)`の
+   自動入力を確認)
 5. `tools/keylogger_demo.py`を実行し、手動でキーを押して記録されること、Ctrl+Cで停止できる
    ことを確認する
 6. 確認が終わったら、生成されたログファイル(`keylogger_demo_*.log`)を削除する
